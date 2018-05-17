@@ -1,4 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="IjFkN2QyNWQwMWM1MTBiYjY2ZWVhNDk0NGFhMzczZDExMzY4NmYxMTAi.Dd7JCg.mXN5QO7wQZdmz4cDrSHnD-hrB9U">
+    <link rel="icon" href="/favicon.ico">
+    <title>HelloGitHub &ndash; 分享 GitHub 上入门级、有趣的开源项目</title>
+    <link rel="stylesheet" href="/static/css/pure.min.css?q=1501307512">
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="分享 GitHub 入门级、有趣的开源项目。推广自己的开源项目、编程实践项目、适合练手的开源项目、HelloGitHub月刊">
+    <link rel="stylesheet" href="/static/css/grids-responsive-min.css?q=1501307512">
+    <link rel="stylesheet" href="/static/css/home.css?q=1504674739">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-101093029-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?73e0d9a1bd6e22a206afe0551e5e603d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+</head>
+
+<body>
+
+<div class="pure-menu pure-menu-horizontal">
+    <a href="/" class="pure-menu-heading">Hello GitHub</a>
+    <ul class="pure-menu-list" style="float: right;">
+        
+            <li class="pure-menu-item"><a href="/sign/in/" class="pure-menu-link">Sign in</a></li>
+        
+    </ul>
+</div>
+
+<div class="banner">
+    <h1 class="banner-head">
+        分享 GitHub 上<br>
+        有趣、入门级的开源项目
+    </h1>
+</div>
+
+<div class="l-content">
+    <div class="pricing-tables pure-g">
+        
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-color1">
+                <div class="pricing-table-header">
+                    <h2>已发布</h2>
+
+                    <span class="pricing-table-price">
+                        25 <span>期</span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>
+                        每月 28 号发布最新一期
+                    </li>
+                    <li>
+                    <label>选择一期：
+                        <select id="volume" onchange="get_select(this.id)">
+                            
+                                <option value="/periodical/volume/25/">25</option>
+                            
+                                <option value="/periodical/volume/24/">24</option>
+                            
+                                <option value="/periodical/volume/23/">23</option>
+                            
+                                <option value="/periodical/volume/22/">22</option>
+                            
+                                <option value="/periodical/volume/21/">21</option>
+                            
+                                <option value="/periodical/volume/20/">20</option>
+                            
+                                <option value="/periodical/volume/19/">19</option>
+                            
+                                <option value="/periodical/volume/18/">18</option>
+                            
+                                <option value="/periodical/volume/17/">17</option>
+                            
+                                <option value="/periodical/volume/16/">16</option>
+                            
+                                <option value="/periodical/volume/15/">15</option>
+                            
+                                <option value="/periodical/volume/14/">14</option>
+                            
+                                <option value="/periodical/volume/13/">13</option>
+                            
+                                <option value="/periodical/volume/12/">12</option>
+                            
+                                <option value="/periodical/volume/11/">11</option>
+                            
+                                <option value="/periodical/volume/10/">10</option>
+                            
+                                <option value="/periodical/volume/09/">09</option>
+                            
+                                <option value="/periodical/volume/08/">08</option>
+                            
+                                <option value="/periodical/volume/07/">07</option>
+                            
+                                <option value="/periodical/volume/06/">06</option>
+                            
+                                <option value="/periodical/volume/05/">05</option>
+                            
+                                <option value="/periodical/volume/04/">04</option>
+                            
+                                <option value="/periodical/volume/03/">03</option>
+                            
+                                <option value="/periodical/volume/02/">02</option>
+                            
+                                <option value="/periodical/volume/01/">01</option>
+                            
+                        </select>
+                    </label>
+                    </li>
+                </ul>
+
+                <a id="volume-button" class="button-choose pure-button" href="/periodical/volume/25/">阅读</a>
+            </div>
+        </div>
+        
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-color2">
+                <div class="pricing-table-header">
+                    <h2>分类共有</h2>
+
+                    <span class="pricing-table-price">
+                       16 <span>类</span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                   <li>
+                        编程语言不是学习和进阶的壁垒
+                    </li>
+                    <li>
+                    <label>选择分类：
+                        <select id="category" onchange="get_select(this.id)">
+                            
+                                
+                                    <option value="/periodical/category/C%20%E9%A1%B9%E7%9B%AE/">C 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/C%23%20%E9%A1%B9%E7%9B%AE/">C# 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/C%2B%2B%20%E9%A1%B9%E7%9B%AE/">C++ 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/CSS%20%E9%A1%B9%E7%9B%AE/">CSS 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/Go%20%E9%A1%B9%E7%9B%AE/">Go 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/Java%20%E9%A1%B9%E7%9B%AE/">Java 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/JavaScript%20%E9%A1%B9%E7%9B%AE/">JavaScript 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/Kotlin%20%E9%A1%B9%E7%9B%AE/">Kotlin 项目</option>
+                                
+                            
+                                
+                                    <option selected>Objective-C 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/PHP%20%E9%A1%B9%E7%9B%AE/">PHP 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/Python%20%E9%A1%B9%E7%9B%AE/">Python 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/Ruby%20%E9%A1%B9%E7%9B%AE/">Ruby 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/Swift%20%E9%A1%B9%E7%9B%AE/">Swift 项目</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/%E5%85%B6%E5%AE%83/">其它</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/%E5%BC%80%E6%BA%90%E4%B9%A6%E7%B1%8D/">开源书籍</option>
+                                
+                            
+                                
+                                    <option value="/periodical/category/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</option>
+                                
+                            
+                        </select>
+                    </label>
+                    </li>
+                </ul>
+
+                <a id='category-button' class="button-choose pure-button" href="/periodical/category/Objective-C%20%E9%A1%B9%E7%9B%AE/">查看</a>
+            </div>
+        </div>
+        
+        <div class="pure-u-1 pure-u-md-1-3">
+            <div class="pricing-table pricing-table-color3">
+                <div class="pricing-table-header">
+                    <h2>项目总数</h2>
+
+                    <span class="pricing-table-price">
+                       503 <span>个</span>
+                    </span>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>
+                        欢迎推荐 GitHub 上的开源项目
+                    </li>
+                    <li>
+                        或自己的开源项目
+                    </li>
+                </ul>
+
+                <a target="_blank" class="button-choose pure-button" href="https://github.com/521xueweihan/HelloGitHub/issues/new">推荐</a>
+            </div>
+        </div>
+    </div> <!-- end pricing-tables -->
+    <div class="information pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">HelloGitHub是什么鬼</h3>
+                <p>
+                    最开始我只是想把自己在浏览 GitHub 过程中，发现的有意思、高质量、容易上手的项目收集起来，这样便于以后查找和学习。后来打算把这些有意思、有价值的开源项目分享给大家。最后就写了这个网站，便于查看和分享。
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">在这里你能得到什么</h3>
+                <p>
+                    各种语言的开源项目、让生活变得更美好的工具、书籍、学习笔记、教程等。通过这些项目你将学习到更多编程知识、提高自己的编程技巧、发现编程的乐趣。对于老司机我想说：还记得你上次开心地写代码是什么时候吗？
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">兴趣是最好的老师</h3>
+                <p>
+                    我是偶然的机会接触到了 Python，发现编程如此容易上手，有乐趣。然后开始写东西、解决问题、学习别人的代码，为了写出更有价值的程序。我发现什么"撸"多了，都上瘾，代码也是一样。
+                </p>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="l-box">
+                <h3 class="information-head">小伙伴快到碗里来</h3>
+                <p>
+                    在 GitHub 上你能做的不只是编程：会编程的可以贡献代码，不会编程的可以反馈使用这些工具中的 Bug、帮着宣传你觉得优秀的项目、Star 项目。注册个 GitHub 帐号，加入开源社区，老铁还等什么快点上车。
+                </p>
+            </div>
+        </div>
+    </div><!-- end information -->
+</div> <!-- end l-content -->
+
+<div class="footer l-box">
+    <p>
+        <a target="_blank" href="https://github.com/521xueweihan">Follow @521xueweihan on GitHub</a><br>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo">
+            <img style="width: 18px;vertical-align: sub;" src="https://hellogithub.com/img/filing.png"/>京公网安备 11010802023873号
+        </a>
+        <a target="_blank" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action">
+            京ICP备 17046648号
+        </a>
+    </p>
+</div>
+
+
+<script>
+function get_select(x)
+{
+    document.getElementById(x+"-button").href=document.getElementById(x).value;
+}
+</script>
+
+</body>
+
+</html><!DOCTYPE html>
 <html>
 <head lang="zh">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
